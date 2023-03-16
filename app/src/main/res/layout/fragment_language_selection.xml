@@ -1,10 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.registration.LanguageSelectionFragment">
+    android:layout_height="match_parent">
 
+    <TextView
+        android:fontFamily="@font/inter"
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="Добро пожаловать"
+        android:textColor="@color/purple_500"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/layout1"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt1">
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_backgraund"
+            android:text="Руссий" />
+
+        <Button
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:background="@drawable/button_backgraund"
+            android:text="English" />
+
+        <Button
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:background="@drawable/button_backgraund"
+            android:text="Руссий" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
